@@ -188,6 +188,7 @@ jobs:
             - build/ppc64/musl-cross-make-38e52db8358c043ae82b346a2e6e66bc86a53bc1
             - build/x86/coreboot-4.11
             - build/x86/coreboot-24.02.01
+            - build/x86/coreboot-t480_wip # TODO do we really need to cache this?
             - build/x86/coreboot-dasharo
             - build/x86/coreboot-purism
             - build/x86/musl-cross-make-38e52db8358c043ae82b346a2e6e66bc86a53bc1
@@ -269,6 +270,14 @@ workflows:
       - build_and_persist:
           name: librem_l1um
           target: librem_l1um
+          subcommand: ""
+          requires:
+            - x86-musl-cross-make
+
+      # coreboot-t480_wip
+      - build_and_persist:
+          name: t480-hotp-maximized
+          target: t480-hotp-maximized
           subcommand: ""
           requires:
             - x86-musl-cross-make
@@ -556,3 +565,12 @@ workflows:
           subcommand: ""
           requires:
             - librem_l1um
+
+      # coreboot-t480_wip
+      - build:
+          name: t480-maximized
+          target: t480-maximized
+          subcommand: ""
+          requires:
+            - t480-hotp-maximized
+
