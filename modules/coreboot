@@ -83,7 +83,7 @@ $(eval $(call coreboot_module,24.02.01,))
 # thanks to Máté Kukri for freeing this board and for the deguard toolkit!
 coreboot-t480_wip_repo := https://github.com/gaspar-ilom/coreboot
 coreboot-t480_wip_commit_hash := 4c0fc3080b0f45105385d494b9acdd51336f4fd0
-$(eval $(call coreboot_module,t480_wip,))
+$(eval $(call coreboot_module,t480_wip,24.02.01))
 
 # talos_2 could use the 4.20.1 toolchain, but it's the only ppc64 fork, so
 # there is no point preparing another coreboot module that won't be shared with
