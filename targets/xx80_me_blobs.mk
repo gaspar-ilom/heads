@@ -14,6 +14,13 @@
 $(build)/coreboot-$(CONFIG_COREBOOT_VERSION)/$(BOARD)/.build: \
     $(pwd)/blobs/xx80/me.bin
 
+$(pwd)/blobs/kabylake/Fsp_M.fd:
+	COREBOOT_DIR="$(build)/$(coreboot_base_dir)" \
+		$(pwd)/blobs/kabylake/fetch_split_fsp.sh $(pwd)/blobs/kabylake
+
+$(pwd)/blobs/kabylake/Fsp_S.fd:
+	COREBOOT_DIR="$(build)/$(coreboot_base_dir)" \
+		$(pwd)/blobs/kabylake/fetch_split_fsp.sh $(pwd)/blobs/kabylake		
 
 $(pwd)/blobs/xx80/me.bin:
 	COREBOOT_DIR="$(build)/$(coreboot_base_dir)" \
