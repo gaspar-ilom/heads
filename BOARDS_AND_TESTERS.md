@@ -44,10 +44,10 @@ Only mitigation is to make sure no secret is present in memory (trusted workflow
 Maintainers
 ===
 
-- [@tlaurion](https://github.com/tlaurion) (was Insurgo, not selling hardware anymore, project is currently under-funded)
-- [@JonathonHall-Purism](https://github.com/JonathonHall-Purism) (purism)
-- [@nestire](https://github.com/nestire) (nitrokey)
-- [@osresearch](https://github.com/osresearch) (founder of project, not active)
+- [@tlaurion](https://github.com/tlaurion) (Sold the PrivacyBeast through Insurgo. Main maintainer/developer of Heads since 2018. Need a feature? https://osresearch.net/Consultation-Services/)
+- [@JonathonHall-Purism](https://github.com/JonathonHall-Purism) (Purism)
+- [@nestire](https://github.com/nestire) (Nitrokey)
+- [@osresearch](https://github.com/osresearch) (Founder of the Heads project and main maintainer/developer up to 2018)
 
 Integration/Test
 ===
